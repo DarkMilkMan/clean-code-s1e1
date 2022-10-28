@@ -32,11 +32,16 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
+    listItem.className='li-task';
+
     label.innerText=taskString;
-    label.className='task';
+    label.className='label-task';
+
+    deleteButtonImg.className='img-delete';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className='checkbox';
     editInput.type="text";
     editInput.className="task";
 
@@ -119,7 +124,7 @@ var deleteTask=function(){
 var taskCompleted=function(){
     console.log("Complete Task...");
 
-    //Append the task list item to the #comp-tasks
+    //Append the task list item to the #compl-tasks
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
