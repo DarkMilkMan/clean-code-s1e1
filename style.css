@@ -29,7 +29,8 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.label-task, .task {
+.label-task, 
+.task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -44,7 +45,8 @@ ul {
 li {
   list-style: none;
 }
-input,button{
+input,
+button {
   outline: none;
 }
 button {
@@ -56,7 +58,8 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.add:hover, .edit:hover {
+.add:hover, 
+.edit:hover {
   color: #3a3A3a;
 }
 /* Heading */
@@ -118,7 +121,7 @@ h3,
   font-size: 18px;
   width: 226px;
 }
-.li-task >    .task {
+.li-task > .task {
   width: 226px;
 }
 .delete .img-delete {
